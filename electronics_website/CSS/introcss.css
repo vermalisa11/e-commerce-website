@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    font-family: 'Flamenco', cursive;
+    font-weight: lighter;
+    
+
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,240,.4),rgba(0,0,240,.4)) ,url('https://image.freepik.com/free-vector/abstract-blue-lights-background_1182-609.jpg');
+    background-size: cover;
+    height:100vh;
+}
+.clearfix:after{
+    content: '.';
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height:0px;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin-top: 20px;
+    
+    
+}.main-nav{
+    float: right;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+
+}
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 100;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid rgb(93, 248, 248);
+}
+.main-content-header{
+    width:1180px ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: larger;
+    
+}
+h1{
+    color:#fff;
+    font-size:240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+   
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    border-radius: 25px;
+    transition: background-color 0.2s,border 0.2s,color 0.2;
+}
+.btn-full{
+    background-color: transparent;
+    color: rgb(230, 243, 243);
+    margin-right: 15px;
+    border: 1px solid rgb(242, 250, 242);
+
+}
+.btn-full:hover{
+    background-color: #fff;
+    color: rgb(23, 29, 119);
+    border-color: blue;
+}
+
+.colorchange{
+    
+    animation: colorsss  1s infinite ;
+}
+@keyframes colorsss{
+    0%{color: red;}
+    25%{color: royalblue;}
+    50%{color: salmon;}
+    100%{color: seashell;}
+}
+.mobile-icon{display: none;}
+.photo1{
+    background-image: url('https://assets-news.housing.com/news/wp-content/uploads/2016/04/23094336/How-to-choose-the-perfect-decor-lights-for-your-room-FB-1200x700-compressed-1200x700.jpg');
+    background-size: cover;
+    height:100vh;
+}
+.photo2{
+    background-image: url('https://i.pinimg.com/originals/ba/18/4e/ba184effbd885a6b832f4ea349b703b6.jpg');
+    background-size: cover;
+    height:100vh;
+}
+.photo3{
+    background-image: url('https://www.missmalini.com/wp-content/uploads/2018/06/Webp.net-resizeimage.jpeg');
+    background-size: cover;
+    height:100vh;
+
+}
+.products1{
+    clear: both;
+}
+
+.products1 li{
+    list-style: none;
+    
+}
+.products1 li img{
+    text-decoration: none;
+    float: left;
+    margin-left: 8px;
+    margin-right: 12px;
+
+}
+.products2{
+    clear: both;
+}
+
+
+.products2 li{
+    list-style: none;
+    
+}
+.products2 li img{
+    text-decoration: none;
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+
+
+}
+footer{
+
+    background-color: burlywood;
+    clear: both;
+}
+@media only screen and (max-width:1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+@media only screen and (max-width:998px){
+    h1{font-size: 200%;}
+}
+@media only screen and (max-width:860px){
+    h1{font-size: 180%;}
+    .main-nav li{display: none;
+    }
+    .mobile-icon{
+        display: inline-block;
+        float: right;
+        color: #fff;
+        margin-top: 30px;
+        margin-right: 20px;
+
+    }
+    .main-nav{
+        float: left;
+    }
+    .main-nav li{
+        
+        display: block;
+        margin-top: 10px;
+
+    }
+    
+    
+
+
+
+}
+
+

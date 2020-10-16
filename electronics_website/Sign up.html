@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="CSS/signup.css">
+	<script type="text/javascript">
+		function myfun(){
+			var a = document.getElementById("mobile").value;
+			var b = document.getElementById("fname").value;
+			var c = document.getElementById("lname").value;
+
+
+
+			if(b == ""){
+				document.getElementById("fnamemassage").innerHTML="** Please fill first name";
+				return false;
+			}
+			if(c == ""){
+				document.getElementById("lnamemassage").innerHTML="** Please fill last name";
+				return false;
+			}
+
+
+
+			if(a==""){
+				document.getElementById("mobmassage").innerHTML="** Please fill mobile number";
+				return false;
+			}
+			if(isNaN(a)){
+				document.getElementById("mobmassage").innerHTML="** Enter only numeric value";
+				return false;
+			}
+			if(a.length < 10 || a.length > 10){
+				document.getElementById("mobmassage").innerHTML="** Mobile Number should be of 10 digit";
+				return false;
+			}
+
+
+		}
+
+	</script>
+
+		
+
+</head>
+<body>
+	
+	<div class="homediv"><a href="index.html"><image src="images/home.png" class="home" alt="Home"></a></div>
+	<div class="signupbox">
+		<image src="images/loginavatar.png" class="avatar">
+
+			<h1>Sign Up </h1>
+			<form onsubmit="return myfun()">
+				<p>Name</p>
+				<input id="fname" type="text" placeholder="Fisrt Name" value="">
+				<span style="color: red" id="fnamemassage"></span>
+				<input id="lname" type="text" placeholder="Last Name" value="">
+				<span style="color: red" id="lnamemassage"></span>
+
+				<p>Usename/Email</p>
+				<input type="email" name="" placeholder="xyz@example.in" autocomplete="off">
+
+				<p>Password</p>
+				<input type="password" name="" placeholder="Enter Password" autocomplete="off">
+				
+				<p>Confirm Password</p>
+				<input type="password" name="" placeholder="Confirm Password" autocomplete="off">
+
+				<p>Date of Birth</p>
+				<input type="date" name="" autocomplete="off">
+
+				<p>Contact</p>
+				<input id="mobile" type="text" placeholder="Mobie Number" value="" autocomplete="off">
+				<span style="color: red" id="mobmassage"></span>
+
+				<P>Address</P>
+				<input class="address" type="textarea" name="" placeholder="Address" autocomplete="off">
+
+				<p>Paymwnt Methods</p>
+				<select>
+						<option value="none">Select</option>
+						<option value="netbenking">Net banking</option>
+						<option value="creditcard">Credit Card</option>
+						<option value="Debitcard">Debit Card</option>
+						<option value="caseondelivery">COD</option>
+				</select></br>
+
+				<a href="Sign in.html"><input type="submit" name="" value="Sign Up"></a></br>
+				<input type="reset" name="" value="Reset">
+
+			</form>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+	margin:0;
+	padding: 0;
+	background: url("../images/ba.jpg");
+	background-size: cover;
+	background-position: center;
+	font-family: 'Flamenco';
+}
+.homediv{
+	width: 100px;
+	height: 100px;
+	color: #fff;
+	top: 10%;
+	left: 80%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.home{
+	margin-top: 10%;
+	margin-right: 90%;
+	width : 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: relative;
+	top: -50px;
+}
+
+.signupbox{
+	margin-top: 15%;
+	width: 50%;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+.avatar{
+	width : 100px;
+	height: 100px;
+	border-right: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22 px;
+	font-family: 'Flamenco';
+
+}
+
+.signupbox p{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-weight: lighter;
+	padding-top: 20px;
+}
+.inputbox input{
+	width: 100%
+	margin-bottom: 30px;
+}
+
+.signupbox input[type="email"],input[type="text"],input[type="password"],input[type="number"],input[type="date"],input[type="textarea"]
+{
+	padding-top: 1px;
+	padding-bottom: 2px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 10px;
+	 
+}
+
+.signupbox select option,select{
+	padding-top: 1px;
+	padding-bottom: 2px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: #000;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.signupbox input[type="submit"]:hover,input[type="reset"]:hover{
+	cursor: pointer;
+	background :#ffc107;
+	color: #000;
+}
+
+.signupbox input[type="submit"],input[type="reset"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #3333ff;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	font-family: sans-serif;
+	margin-bottom: 10px;
+	width: 50%;
+} 	
